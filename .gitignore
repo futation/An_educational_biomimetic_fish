@@ -67,3 +67,8 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# OS junk files
+Thumbs.db
+desktop.ini
+.DS_Store
