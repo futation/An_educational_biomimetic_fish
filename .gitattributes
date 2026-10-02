@@ -1,0 +1,20 @@
+# 文本文件：入库时统一换行为 LF，检出时按平台规则处理
+* text=auto
+
+# 源码与文档：显式按文本处理（diff=cpp 启用 C++ 差异算法）
+*.cpp text diff=cpp
+*.h   text diff=cpp
+*.ino text diff=cpp
+*.md  text
+*.txt text
+
+# 二进制文件：禁止 Git 做换行转换或文本合并（避免文件损坏）
+*.apk   binary
+*.png   binary
+*.jpg   binary
+*.webp  binary
+*.pdf   binary
+*.mp4   binary
+*.epro2 binary
+*.step  binary
+*.STEP  binary
